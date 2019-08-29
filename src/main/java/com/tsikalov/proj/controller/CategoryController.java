@@ -18,8 +18,8 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @PostMapping
-    public void save(@Valid @RequestBody CategoryRequest request) {
-        categoryService.save(request);
+    public void save(@Valid @RequestBody CategoryRequest categoryRequest) {
+        categoryService.save(categoryRequest);
     }
 
     @GetMapping
